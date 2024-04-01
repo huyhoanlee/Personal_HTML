@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Porfolio</title>
+<link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+	<script>
+		/*object*/
+		let hoan = {
+			name: "Hoan", 
+			deptrai: true,
+			age: 20
+		}
+		document.write(hoan.age)
+		
+		/*variable*/
+		const name = 'Porfolio'
+		document.write(name);
+		document.write("\n")
+
+		/*switch case*/
+		const input = 1
+		switch (input) {
+			case 1:
+				console.log("nhap sanpham")
+				break;
+			case 2: 
+				console.log("in sanpham")
+				break;
+			default:
+				console.log("thoat")
+		}
+
+		/*for loop*/
+		const traiCay = ["buoi", "cam", "xoai", "quyt"]
+		<!-- document.write(traiCay) -->
+		for (const trai of traiCay) {
+			document.write(trai);
+		}
+
+	</script>
+	
+<!-- 1 hieen thi thong tin -->
+	<h2>Hello cac ban, minh la Hoan</h2>
+		<div id = "picture">
+			This is a picture about me <br />
+		<img width = 100 src = "https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-1/412904104_1659657597895433_2772676446924886529_n.jpg?stp=dst-jpg_p240x240&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_eui2=AeENxY-QW20Bv7cXpcinI5bkWWHkET2pfo9ZYeQRPal-j5RKuAOEQBI-7AblN_0gN51YkJou4c8Ccr-dwHhtnM1m&_nc_ohc=JPKjMyiu5P8AX8tXnbD&_nc_ht=scontent.fdad1-3.fna&oh=00_AfBT5ikgaHLDTMzQu0olr2YeNuoUZoyVcdSjgm-WhrBcVg&oe=65AE8373"/>
+		</div>
+		<p>This is a paragraph:</p>
+			<ul>
+				<li>so 1 </li>
+				<li>so 2 </li>
+			</ul>
+
+<!-- 2. lay thong tin -->
+<h3> cau hoi cho minh? </h3>
+<form>
+	<div>
+		<label> cau hoi 1 </label>
+		<input type="text" placeholder = "my ques"/>
+        <button>Bam vao day de gui cau hoi</button>
+    </div>
+    
+    <div>
+    	<label> Your learning? </label>
+    	<select>
+    		<option>Uni</option>
+            <option>High school</option>
+            <option>Sec school</option>
+    	</select>
+    </div>
+    
+   	<div>
+    	<label> Sex </label>
+    	<input type="radio">nam
+        <input type="radio" name="gioi tinh">nu
+    </div>
+</form>
+	<footer>
+		<h3>Lien he cho minh</h3>
+        <ul>
+        	<li>email</li>
+            <li>sdt</li>
+            <li>facebook <a href = https://www.facebook.com/lehuyhoan2003/>Huy Hoan</a></li>
+        </ul>
+	</footer>
+</body>
+</html>
